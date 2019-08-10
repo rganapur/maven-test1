@@ -55,6 +55,19 @@
     </dependency>
   </dependencies>
 
+  <distributionManagement>
+  <repository>
+    <id>deployment</id>
+	<name>Internal Release</name>
+    <url>http://localhost:8081/nexus/content/repositories/Proj_rel/</url>
+  </repository>
+  <snapshotRepository>
+    <id>deployment</id>
+	<name>Internal snapshot Release</name>
+    <url>http://localhost:8081/nexus/content/repositories/proj_snap/</url>
+  </snapshotRepository>
+</distributionManagement>
+  
   <build>
     <finalName>project3</finalName>
     <sourceDirectory>src/java</sourceDirectory>
